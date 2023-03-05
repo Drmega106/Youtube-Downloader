@@ -2,9 +2,6 @@ let container = document.querySelector(".container");
 let input = document.querySelector(".vinput input");
 let btn = document.querySelector(".btn");
 let videos = document.querySelector(".videos");
-let vlink = "";
-
-
 
 if (input.value === "") {
     videos.innerHTML = "<span> ...your video will appear here </span>"
@@ -45,11 +42,6 @@ btn.onclick = function () {
                 videos.appendChild(downloadbtn);
 
             });
-
-
-            console.log(urls)
-            
-           
 };
 };
 };
