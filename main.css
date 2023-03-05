@@ -6,6 +6,7 @@
 
 a {
     text-decoration: none;
+    display: block;
 }
 
 body {
@@ -83,7 +84,10 @@ body {
 .videos {
     margin: 20px auto;
     min-width: 350px;
-    color : #bbe1fa
+    color : #bbe1fa;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 .video{
     margin: 15px 5px;
@@ -119,14 +123,15 @@ body {
 
 .downloadbtn {
     text-align: center;
-    color: aliceblue;
+    align-self: center;
+    color: white;
     border-radius: 7px;
-    margin: 10px 30px;
-    padding: 5px;
+    margin: 10px;
+    padding: 5px 20px;
     cursor: pointer;
     background-color: var(--btn-color);
     user-select: none;
-    font-size: 12 px;
+    font-size: 14px;
 }
 
 
