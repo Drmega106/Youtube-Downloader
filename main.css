@@ -51,7 +51,7 @@ body {
 }
 
 .vinput input {
-    font-size : 13 px;
+    font-size : 17 px;
     width: 400px;
     height: 40px;
     outline: none;
@@ -79,7 +79,7 @@ body {
     background-color: var(--btn-color);
     user-select: none;
     z-index: 2;
-    font-size : 18px;
+    font-size : 19px;
 }
 .videos {
     margin: 20px auto;
@@ -93,7 +93,7 @@ body {
     margin: 15px 5px;
     border-radius: 10px;
     overflow-wrap: normal;
-    font-size : 20 px;
+    font-size : 24 px;
     transition : display, 0,5s;
     display: flex;
     flex-direction: column;
@@ -131,7 +131,7 @@ body {
     cursor: pointer;
     background-color: var(--btn-color);
     user-select: none;
-    font-size: 14px;
+    font-size: 20px;
 }
 
 
