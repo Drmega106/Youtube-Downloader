@@ -31,6 +31,7 @@ btn.onclick = function () {
                     videos.innerHTML = "";
                     data = this.responseText;
                     dataobj = JSON.parse(data);
+                    console.log(dataobj)
                     let video = document.createElement("div");
                     video.classList.add("video");
                     video.innerHTML =  ` <img src=${dataobj.thumb} alt="thumb" class="vimg"</img>  
@@ -45,6 +46,15 @@ btn.onclick = function () {
                         downloadbtn.target = "_blank";
                         videos.appendChild(downloadbtn);
                     });
+                    for (i =0; i < dataobj.url.length; i++) {
+                        if (dataobj.url[i].audio) {
+                            let audiobtn = document.createElement("a");
+                            audiobtn.classList.add("downloadbtn");
+                            audiobtn.innerHTML= `${dataobj.url[i].name} ( size: ${dataobj.url[i].filesize? Math.round(dataobj.url[i].filesize/1024/1024)+" Mb" : "unknown"})`;
+                            audiobtn.href = dataobj.url[i].url;
+                            videos.appendChild(audiobtn);
+                        };
+                    };        
         };
         };
         } else {
